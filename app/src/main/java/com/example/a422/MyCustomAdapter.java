@@ -50,13 +50,10 @@ public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
         }
 
         Map<String, String> map = mValues.get(i);
-
         TextView title = view.findViewById(R.id.TextOne);
         TextView subtitle = view.findViewById(R.id.TextTwo);
-
         title.setText(map.get(KEY1));
         subtitle.setText(map.get(KEY2));
-
 
         Button btn = view.findViewById(R.id.buttonDel);
         btn.setOnClickListener(new View.OnClickListener() {
